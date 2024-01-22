@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>diff</title>
+<meta name="Generator" content="Vim/8.1">
+<meta name="plugin-version" content="vim9.0_v2">
+<meta name="settings" content="number_lines,whole_filler,use_css,no_foldcolumn,expand_tabs,line_ids,pre_wrap,prevent_copy=,use_input_for_pc=none">
+<meta name="colorscheme" content="no-clown-fiesta">
+<style>
+<!--
+pre { white-space: pre-wrap; font-family: monospace; color: #e1e1e1; background-color: #151515; }
+body { font-family: monospace; color: #e1e1e1; background-color: #151515; }
+* { font-size: 1em; }
+.markdownOrderedListMarker { color: #b46958; }
+.LineNr { color: #373737; }
+.markdownBold { color: #f4bf75; font-weight: bold; }
+.DiffAdd { background-color: #1c2019; padding-bottom: 1px; }
+.DiffChange { color: #51657b; background-color: #191a20; padding-bottom: 1px; }
+.DiffDelete { color: #984936; background-color: #201919; padding-bottom: 1px; }
+.DiffText { background-color: #191a20; padding-bottom: 1px; }
+-->
+<!--
+table { table-layout: fixed; }
+html, body, table, tbody { width: 100%; margin: 0; padding: 0; }
+table, td, th { border: 1px solid; }
+td { vertical-align: top; }
+th, td { width: 50.0%; }
+td div { overflow: auto; }
+-->
+</style>
+<script>
+<!--
+
+/* function to open any folds containing a jumped-to line before jumping to it */
+function JumpToLine()
+{
+  var lineNum;
+  lineNum = window.location.hash;
+  lineNum = lineNum.substr(1); /* strip off '#' */
+
+  if (lineNum.indexOf('L') == -1) {
+    lineNum = 'L'+lineNum;
+  }
+  if (lineNum.indexOf('W') == -1) {
+    lineNum = 'W1'+lineNum;
+  }
+  var lineElem = document.getElementById(lineNum);
+  /* Always jump to new location even if the line was hidden inside a fold, or
+   * we corrected the raw number to a line ID.
+   */
+  if (lineElem) {
+    lineElem.scrollIntoView(true);
+  }
+  return true;
+}
+if ('onhashchange' in window) {
+  window.onhashchange = JumpToLine;
+}
+
+-->
+</script>
+</head>
+<body onload='JumpToLine();'>
+<table id='vimCodeElement'>
+<tr>
+<th>MatTem_Fy-Str\MatTem_Fy-Str.md</th>
+<th>okruhy_FYZ\okruhy_FYZ.md</th>
+</tr><tr>
+<td><div>
+<pre>
+<span id="W1L1" class="LineNr"> 1 </span><span class="markdownBold DiffChange">**</span><span class="markdownBold DiffChange">Gymnázium, Praha 9, Českolipská 373</span><span class="markdownBold DiffChange">**</span><span class="DiffText"> </span><span class="DiffChange">                                                                                                                                                                         </span>
+<span id="W1L2" class="LineNr"> 2 </span>
+<span id="W1L3" class="LineNr"> 3 </span><span class="markdownBold DiffChange">**</span><span class="markdownBold DiffChange">Maturitní témata z fyziky</span><span class="markdownBold DiffChange">**</span><span class="DiffText"> </span><span class="DiffChange">                                                                                                                                                                                   </span>
+<span id="W1L4" class="LineNr"> 4 </span>
+<span id="W1L5" class="LineNr"> 5 </span><span class="markdownOrderedListMarker DiffChange">1.</span><span class="DiffChange"> </span><span class="markdownBold DiffChange">**</span><span class="markdownBold DiffChange">Kinematika hmotného bodu</span><span class="markdownBold DiffChange">**</span><span class="DiffText">   </span><span class="DiffChange">                                                                                                                                                                               </span>
+<span id="W1L6" class="LineNr"> 6 </span>
+<span id="W1L7" class="LineNr"> 7 </span><span class="DiffChange">pojem kinematika, hmotný bod, vztažná soustava, určování polohy hm. bodu, trajektorie a dráha. Druhy pohybu podle trajektorie a podle velikosti okamžité rychlosti. Vztahy pro rychlost, dráhu a zrychlení. Grafické znázornění veličin s(t), v(t), a(t) pro různé druhy pohybů</span><span class="DiffText">  </span>
+<span id="W1L8" class="LineNr"> 8 </span>
+<span id="W1L9" class="LineNr"> 9 </span><span class="markdownOrderedListMarker DiffChange">2.</span><span class="DiffChange"> </span><span class="markdownBold DiffChange">**</span><span class="markdownBold DiffChange">Dynamika hmotného bodu</span><span class="markdownBold DiffChange">**</span><span class="DiffText">  </span><span class="DiffChange">                                                                                                                                                                                  </span>
+<span id="W1L10" class="LineNr">10 </span>
+<span id="W1L11" class="LineNr">11 </span><span class="DiffChange">pojem dynamika. Newtonovy pohybové zákony, inerciální a neinerciální vztažná soustava. Síly působící na hm. bod, skládání sil. Hybnost, zákon zachování hybnosti, impuls síly, dynamika přímočarého pohybu po nakloněné rovině.</span><span class="DiffText">  </span>
+<span id="W1L12" class="LineNr">12 </span>
+<span id="W1L13" class="LineNr">13 </span><span class="markdownOrderedListMarker DiffChange">3.</span><span class="DiffChange"> </span><span class="markdownBold DiffChange">**</span><span class="markdownBold DiffText">Energie a její přeměny</span><span class="markdownBold DiffText">**</span><span class="DiffText">  </span><span class="DiffChange">                                                                                                                                                                                  </span>
+<span id="W1L14" class="LineNr">14 </span>
+<span id="W1L15" class="LineNr">15 </span><span class="DiffText">druhy energie, vztah mezi energií a prací. Zákon zachování energie, zákon zachování mechanické energie, výkon, účinnost.</span><span class="DiffText">  </span><span class="DiffChange">                                                                              </span>
+<span id="W1L16" class="LineNr">16 </span>
+<span id="W1L17" class="LineNr">17 </span><span class="markdownOrderedListMarker DiffChange">4.</span><span class="DiffChange"> </span><span class="markdownBold DiffChange">**</span><span class="markdownBold DiffChange">Mechanika tuhého tělesa</span><span class="markdownBold DiffChange">**</span><span class="DiffText">  </span><span class="DiffChange">                                                                                                                                                                                 </span>
+<span id="W1L18" class="LineNr">18 </span>
+<span id="W1L19" class="LineNr">19 </span><span class="DiffText">tuhé tělesa, pohyb tuhého tělesa, moment síly vzhledem k ose otáčení, skládání a rozklad sil, dvojice sil a moment dvojice sil. Těžiště tělesa, rovnovážná poloha tuhého tělesa. Kinetická energie tuhého tělesa, moment setrvačnosti.</span><span class="DiffText">  </span>
+<span id="W1L20" class="LineNr">20 </span>
+<span id="W1L21" class="LineNr">21 </span><span class="markdownOrderedListMarker DiffChange">5.</span><span class="DiffChange"> </span><span class="markdownBold DiffChange">**</span><span class="markdownBold DiffChange">Gravitační pole</span><span class="markdownBold DiffChange">**</span><span class="DiffText">  </span><span class="DiffChange">                                                                                                                                                                                         </span>
+<span id="W1L22" class="LineNr">22 </span>
+<span id="W1L23" class="LineNr">23 </span><span class="DiffChange">Newtonův gravitační zákon, intenzita gravitačního pole, gravitační zrychlení. Pohyby těles v homogenním poli Země (vrhy). Pohyby v centrálním poli Země a grav. poli Slunce.</span><span class="DiffText">  </span><span class="DiffChange">                       </span>
+<span id="W1L24" class="LineNr">24 </span>
+<span id="W1L25" class="LineNr">25 </span><span class="markdownOrderedListMarker DiffChange">6.</span><span class="DiffChange"> </span><span class="markdownBold DiffChange">**</span><span class="markdownBold DiffChange">Mechanika kapalin a plynů</span><span class="markdownBold DiffChange">**</span><span class="DiffText">  </span><span class="DiffChange">                                                                                                                                                                               </span>
+<span id="W1L26" class="LineNr">26 </span>
+<span id="W1L27" class="LineNr">27 </span><span class="DiffChange">tekutiny, vlastnosti tekutin, ideální kapalina a ideální plyn. Tlak v kapalinách a plynech vyvolaný vnější a tíhovou silou (Pascalův zákon, hydrostatický tlak). Hydrostatické paradoxon, vztlaková síla v kapalinách a plynech. Hydrodynamika, proudění kapalin a plynů, Bernoulliho rovnice, zák. zachování energie, proudění reálné tekutiny.</span><span class="DiffText">  </span>
+<span id="W1L28" class="LineNr">28 </span>
+<span id="W1L29" class="LineNr">29 </span><span class="markdownOrderedListMarker DiffChange">7.</span><span class="DiffChange"> </span><span class="markdownBold DiffChange">**</span><span class="markdownBold DiffChange">Základní poznatky molekulárně kinetické teorie látek</span><span class="markdownBold DiffChange">**</span><span class="DiffText">  </span><span class="DiffChange">                                                                                                                                                 </span>
+<span id="W1L30" class="LineNr">30 </span>
+<span id="W1L31" class="LineNr">31 </span><span class="DiffChange">kinetická teorie látek, základní pojmy částicové struktury. Termodynamická soustava, vnitřní energie, tepelná rovnováha, tlak a teplota z hlediska kinetické teorie látek. První termodynamický zákon.</span><span class="DiffText">  </span>
+<span id="W1L32" class="LineNr">32 </span>
+<span id="W1L33" class="LineNr">33 </span><span class="markdownOrderedListMarker DiffChange">8.</span><span class="DiffChange"> </span><span class="markdownBold DiffChange">**</span><span class="markdownBold DiffChange">Struktura a vlastnosti plynných látek</span><span class="markdownBold DiffChange">**</span><span class="DiffText">  </span><span class="DiffChange">                                                                                                                                                                   </span>
+<span id="W1L34" class="LineNr">34 </span>
+<span id="W1L35" class="LineNr">35 </span><span class="DiffChange">model ideálního plynu, stavová rovnice ideálního plynu. Střední kvadratická rychlost, pravděpodobná rychlost. Děje v ideálním plynu, práce plynu, kruhový děj. Druhý termodynamický zákon. Měrná tepelná kapacita</span><span class="DiffText">.</span><span class="DiffText">  </span>
+<span id="W1L36" class="LineNr">36 </span>
+<span id="W1L37" class="LineNr">37 </span><span class="markdownOrderedListMarker DiffChange">9.</span><span class="DiffChange"> </span><span class="markdownBold DiffChange">**</span><span class="markdownBold DiffChange">Struktura a vlastnosti kapalin</span><span class="markdownBold DiffChange">**</span><span class="DiffText"> ideální kapalina, povrchová vrstva kapalin, povrchová síla, povrchové napětí a energie. Jevy na rozhraní pevného a kapalného tělesa, kapilární tlak, kapilarita. Teplotní objemová roztažnost kapalin, anomálie vody.</span><span class="DiffText">  </span>
+<span id="W1L38" class="LineNr">38 </span><span class="markdownOrderedListMarker DiffAdd">9.</span><span class="DiffAdd"> </span><span class="markdownBold DiffAdd">**</span><span class="markdownBold DiffAdd">Struktura a vlastnosti pevných látek</span><span class="markdownBold DiffAdd">**</span><span class="DiffAdd"> krystalické a amorfní látky, ideální krystalová mřížka, poruchy krystalové mřížky. Typy deformací pevného tělesa, Hookův zákon. Délková a objemová roztažnost pevných látek.</span><span class="DiffAdd">  </span>
+<span id="W1L39" class="LineNr">39 </span><span class="markdownOrderedListMarker DiffAdd">9.</span><span class="DiffAdd"> </span><span class="markdownBold DiffAdd">**</span><span class="markdownBold DiffAdd">Skupenské přeměny</span><span class="markdownBold DiffAdd">**</span><span class="DiffAdd">  </span><span class="DiffAdd">                                                                                                                                                                                       </span>
+<span id="W1L40" class="LineNr">40 </span>
+<span id="W1L41" class="LineNr">41 </span><span class="DiffText">tání, tuhnutí, krystalizace, sublimace, vypařování, var, kapalnění, skupenské teplo, měrné skupenské teplo. Sytá pára, fázový diagram.</span><span class="DiffText">  </span><span class="DiffChange">                                                            </span>
+<span id="W1L42" class="LineNr">42 </span>
+<span id="W1L43" class="LineNr">43 </span><span class="markdownOrderedListMarker DiffChange">1</span><span class="markdownOrderedListMarker DiffText">2.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Elektrické pole</span><span class="markdownBold DiffText">**</span><span class="DiffText">  </span><span class="DiffChange">                                                                                                                                                                                        </span>
+<span id="W1L44" class="LineNr">44 </span>
+<span id="W1L45" class="LineNr">45 </span><span class="DiffText">Coulombův zákon, intenzita a potenciál el. pole, jejich vztahy. Práce v elektrickém poli, ekvipotenciální plochy, napětí. Elektrostatická indukce, polarizace dielektrika. Kapacita vodiče, kondenzátoru.</span><span class="DiffText">  </span>
+<span id="W1L46" class="LineNr">46 </span>
+<span id="W1L47" class="LineNr">47 </span><span class="markdownOrderedListMarker DiffChange">1</span><span class="markdownOrderedListMarker DiffText">3.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Obvod stejnosměrného elektrického proudu</span><span class="markdownBold DiffText">**</span><span class="DiffText">  </span><span class="DiffChange">                                                                                                                                                               </span>
+<span id="W1L48" class="LineNr">48 </span>
+<span id="W1L49" class="LineNr">49 </span><span class="DiffText">vznik stejnosměrného proudu, elektrický odpor. Základní zákony v obvodu stejnosměrného proudu (Ohmův zákon pro část obvodu, pro uzavřený obvod, Kirchhoffovy zákony). Přístroje k měření napětí a proudu, zvětšení jejich rozsahu. Práce a výkon elektrického obvodu.</span><span class="DiffText">  </span>
+<span id="W1L50" class="LineNr">50 </span>
+<span id="W1L51" class="LineNr">51 </span><span class="markdownOrderedListMarker DiffChange">1</span><span class="markdownOrderedListMarker DiffText">4.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Elektrický proud v látkách</span><span class="markdownBold DiffText">**</span><span class="DiffText">  </span><span class="DiffChange">                                                                                                                                                                             </span>
+<span id="W1L52" class="LineNr">52 </span>
+<span id="W1L53" class="LineNr">53 </span><span class="DiffText">vedení el. proudu v kovech, kapalinách a plynech. Závislost el. odporu na teplotě, supravodivost. Termoelektrický jev. Faradayovy zákony, voltampérové charakteristiky, elektrolytická polarizace. Druhy výbojů, katodové záření, elektronový paprsek, princip obrazovky, termoemise.</span><span class="DiffText">  </span>
+<span id="W1L54" class="LineNr">54 </span>
+<span id="W1L55" class="LineNr">55 </span><span class="markdownOrderedListMarker DiffChange">1</span><span class="markdownOrderedListMarker DiffText">5.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Elektrický proud v polovodičích</span><span class="markdownBold DiffText">**</span><span class="DiffText">  </span><span class="DiffChange">                                                                                                                                                                        </span>
+<span id="W1L56" class="LineNr">56 </span>
+<span id="W1L57" class="LineNr">57 </span><span class="DiffText">pojem polovodiče,  el. odpor v závislosti na teplotě a porovnání s kovy. Vlastní a nevlastní vodivost polovodičů, typ P, N. Termistor, fotorezistor, diodový jev, dioda. Usměrňovač (jednocestný, dvoucestný). Tranzistor, tranzistorový jev.</span><span class="DiffText">  </span>
+<span id="W1L58" class="LineNr">58 </span>
+<span id="W1L59" class="LineNr">59 </span><span class="markdownOrderedListMarker DiffChange">1</span><span class="markdownOrderedListMarker DiffText">6.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Obvod střídavého proudu</span><span class="markdownBold DiffText">**</span><span class="DiffText">  </span><span class="DiffChange">                                                                                                                                                                                </span>
+<span id="W1L60" class="LineNr">60 </span>
+<span id="W1L61" class="LineNr">61 </span><span class="DiffChange">v</span><span class="DiffText">znik střídavého napětí a proudu, porovnání obvodu R, L, C ve střídavém a stejnosměrném obvodu. Výkon střídavého proudu, efektivní hodnoty, účiník. Oscilační obvod. Transformátory, generátory střídavého proudu (třífázový generátor).</span><span class="DiffText">  </span>
+<span id="W1L62" class="LineNr">62 </span>
+<span id="W1L63" class="LineNr">63 </span><span class="markdownOrderedListMarker DiffChange">1</span><span class="markdownOrderedListMarker DiffText">7.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Stacionární magnetické pole</span><span class="markdownBold DiffText">**</span><span class="DiffText">  </span><span class="DiffChange">                                                                                                                                                                            </span>
+<span id="W1L64" class="LineNr">64 </span>
+<span id="W1L65" class="LineNr">65 </span><span class="DiffText">magnetické pole el. proudu, mag. indukční čáry, mag. indukce, mag. síla působící na vodič v homog. mag. poli, vzájemné silové působení dvou vodičů s proudem, definice ampéru. Částice s nábojem v mag. poli. Mag. vlastnosti látek.</span><span class="DiffText">  </span>
+<span id="W1L66" class="LineNr">66 </span>
+<span id="W1L67" class="LineNr">67 </span><span class="markdownOrderedListMarker DiffChange">1</span><span class="markdownOrderedListMarker DiffText">8.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Nestacionární magnetické pole</span><span class="markdownBold DiffText">**</span><span class="DiffText">  </span><span class="DiffChange">                                                                                                                                                                          </span>
+<span id="W1L68" class="LineNr">68 </span>
+<span id="W1L69" class="LineNr">69 </span><span class="DiffText">souvislost nestacionárního mag. a el. pole, mag. indukční tok, elektromagnetická indukce, Faradayův zákon elmag. indukce, indukovaný proud, vířivé proudy. Vlastní indukce, přechodné jevy.</span><span class="DiffText">  </span><span class="DiffChange">         </span>
+<span id="W1L70" class="LineNr">70 </span>
+<span id="W1L71" class="LineNr">71 </span><span class="markdownOrderedListMarker DiffChange">1</span><span class="markdownOrderedListMarker DiffText">9.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Kmitavý pohyb</span><span class="markdownBold DiffText">**</span><span class="DiffText">  </span><span class="DiffChange">                                                                                                                                                                                          </span>
+<span id="W1L72" class="LineNr">72 </span>
+<span id="W1L73" class="LineNr">73 </span><span class="DiffText">vznik kmitání, souvislost harmonického kmitavého  pohybu s pohybem po kružnici, kinematika kmitavého pohybu, základní  pojmy:  Perioda,  frekvence,  fáze,  počáteční  fáze.  Dynamika  kmitavého  pohybu,  složené  kmitání,  princip superpozice. Přeměny energie v mechanickém oscilátoru, vlastní a nucené kmitání oscilátoru.</span><span class="DiffText">  </span>
+<span id="W1L74" class="LineNr">74 </span>
+<span id="W1L75" class="LineNr">75 </span><span class="markdownOrderedListMarker DiffText">20.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Mechanické a elektromagnetické vlnění</span><span class="markdownBold DiffText">**</span><span class="DiffText">  </span><span class="DiffChange">                                                                                                                                                                 </span>
+<span id="W1L76" class="LineNr">76 </span>
+<span id="W1L77" class="LineNr">77 </span><span class="DiffText">vznik a druhy mech. vlnění, rovnice vlnění, interference, šíření vlnění, Huygensův princip, odraz, lom a ohyb vlnění, vznik elmg. vlnění a jeho vlastnosti, přehled elmg. vlnění a vlastnosti podle frekvence (vlnových délek), porovnání mechanického a elektromagnetického vlnění</span><span class="DiffText">  </span>
+<span id="W1L78" class="LineNr">78 </span>
+<span id="W1L79" class="LineNr">79 </span><span class="markdownOrderedListMarker DiffText">21.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Základní poznatky optiky</span><span class="markdownBold DiffText">**</span><span class="DiffText">  </span><span class="DiffChange">                                                                                                                                                                               </span>
+<span id="W1L80" class="LineNr">80 </span>
+<span id="W1L81" class="LineNr">81 </span><span class="DiffText">pojem světlo, šíření světla, paprsek, principy paprskové optiky, index lomu, odraz a lom světla, disperze, interference světla, ohyb, polarizace světla.</span><span class="DiffText">  </span><span class="DiffChange">                                                </span>
+<span id="W1L82" class="LineNr">82 </span>
+<span id="W1L83" class="LineNr">83 </span><span class="markdownOrderedListMarker DiffChange">2</span><span class="markdownOrderedListMarker DiffText">2.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Optické soustavy a optické zobrazení</span><span class="markdownBold DiffText">**</span><span class="DiffText">  </span><span class="DiffChange">                                                                                                                                                                   </span>
+<span id="W1L84" class="LineNr">84 </span>
+<span id="W1L85" class="LineNr">85 </span><span class="DiffText">základní pojmy, zobrazení odrazem (rovinné a kulové zrcadlo), zobrazení lomem (čočky), zobrazovací rovnice, příčné zvětšení, znaménková konvence, optické soustavy (oko, lupa, mikroskop, dalekohled, objektivní přístroje).</span><span class="DiffText">  </span>
+<span id="W1L86" class="LineNr">86 </span>
+<span id="W1L87" class="LineNr">87 </span><span class="markdownOrderedListMarker DiffChange">2</span><span class="markdownOrderedListMarker DiffText">3.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Základní poznatky speciální teorie relativity</span><span class="markdownBold DiffText">**</span><span class="DiffText">  </span><span class="DiffChange">                                                                                                                                                         </span>
+<span id="W1L88" class="LineNr">88 </span>
+<span id="W1L89" class="LineNr">89 </span><span class="DiffText">inerciální a neinerciální vztažné soustavy, prostor a čas v klasické mechanice, základní principy speciální teorie relativity, důsledky Einsteinových principů (relativnost současnosti, kontrakce délek, dilatace času, skládání rychlostí, relativistická hmotnost, hybnost, vztah mezi hmotností a energií).</span><span class="DiffText">  </span>
+<span id="W1L90" class="LineNr">90 </span>
+<span id="W1L91" class="LineNr">91 </span><span class="markdownOrderedListMarker DiffChange">2</span><span class="markdownOrderedListMarker DiffText">4.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Vlastnosti atomového jádra, jaderné reakce, elementární částice</span><span class="markdownBold DiffText">**</span><span class="DiffText">  </span><span class="DiffChange">                                                                                                                                    </span>
+<span id="W1L92" class="LineNr">92 </span>
+<span id="W1L93" class="LineNr">93 </span><span class="DiffText">základní vlastnosti atomových jader, přirozená a umělá radioaktivita, radionuklidy, rozpadový zákon, poločas rozpadu. Jaderné reakce, jaderná elektrárna. Elementární částice, principy detekce částic, urychlovače.</span><span class="DiffText">  </span>
+<span id="W1L94" class="LineNr">94 </span>
+<span id="W1L95" class="LineNr">95 </span><span class="markdownOrderedListMarker DiffChange">2</span><span class="markdownOrderedListMarker DiffText">5.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Astrofyzika</span><span class="markdownBold DiffText">**</span><span class="DiffText"> </span><span class="DiffChange">                                                                                                                                                                                             </span>
+<span id="W1L96" class="LineNr">96 </span>
+<span id="W1L97" class="LineNr">97 </span><span class="DiffText">sluneční soustava, astronomická jednotka, planety, měsíce, komety, pojmy meteor, meteorit, meteoroid. Základní údaje o hvězdách, struktura a vývoj vesmíru.</span><span class="DiffText">  </span><span class="DiffChange">                                           </span>
+<span class="LineNr">   </span><span class="DiffDelete">-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="LineNr">   </span><span class="DiffDelete">-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="LineNr">   </span><span class="DiffDelete">-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="LineNr">   </span><span class="DiffDelete">-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="LineNr">   </span><span class="DiffDelete">-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="LineNr">   </span><span class="DiffDelete">-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="LineNr">   </span><span class="DiffDelete">-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="LineNr">   </span><span class="DiffDelete">-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+</pre>
+</div></td>
+<td><div>
+<pre>
+<span id="W2L1" class="LineNr">  1 </span><span class="markdownBold DiffChange">**</span><span class="markdownBold DiffChange">Gymnázium, Praha 9, Českolipská 373</span><span class="markdownBold DiffChange">**</span><span class="DiffChange">                                                                                                                                                                         </span>
+<span id="W2L2" class="LineNr">  2 </span>
+<span id="W2L3" class="LineNr">  3 </span><span class="markdownBold DiffChange">**</span><span class="markdownBold DiffChange">Maturitní témata z fyziky</span><span class="markdownBold DiffChange">**</span><span class="DiffChange">                                                                                                                                                                                   </span>
+<span id="W2L4" class="LineNr">  4 </span>
+<span id="W2L5" class="LineNr">  5 </span><span class="markdownOrderedListMarker DiffChange">1.</span><span class="DiffChange"> </span><span class="markdownBold DiffChange">**</span><span class="markdownBold DiffChange">Kinematika hmotného bodu</span><span class="markdownBold DiffChange">**</span><span class="DiffChange">                                                                                                                                                                                 </span>
+<span id="W2L6" class="LineNr">  6 </span>
+<span id="W2L7" class="LineNr">  7 </span><span class="DiffChange">pojem kinematika, hmotný bod, vztažná soustava, určování polohy hm. bodu, trajektorie a dráha. Druhy pohybu podle trajektorie a podle velikosti okamžité rychlosti. Vztahy pro rychlost, dráhu a zrychlení. Grafické znázornění veličin s(t), v(t), a(t) pro různé druhy pohybů</span>
+<span id="W2L8" class="LineNr">  8 </span>
+<span id="W2L9" class="LineNr">  9 </span><span class="markdownOrderedListMarker DiffChange">2.</span><span class="DiffChange"> </span><span class="markdownBold DiffChange">**</span><span class="markdownBold DiffChange">Dynamika hmotného bodu</span><span class="markdownBold DiffChange">**</span><span class="DiffChange">                                                                                                                                                                                   </span>
+<span id="W2L10" class="LineNr"> 10 </span>
+<span id="W2L11" class="LineNr"> 11 </span><span class="DiffChange">pojem dynamika. Newtonovy pohybové zákony, inerciální a neinerciální vztažná soustava. Síly působící na hm. bod, skládání sil. Hybnost, zákon zachování hybnosti, impuls síly, dynamika přímočarého pohybu po nakloněné rovině.</span>
+<span id="W2L12" class="LineNr"> 12 </span>
+<span id="W2L13" class="LineNr"> 13 </span><span class="markdownOrderedListMarker DiffChange">3.</span><span class="DiffChange"> </span><span class="markdownBold DiffChange">**</span><span class="markdownBold DiffText">Mechanická práce, výkon, energie a její přeměny</span><span class="markdownBold DiffText">**</span><span class="DiffChange">                                                                                                                                                        </span>
+<span id="W2L14" class="LineNr"> 14 </span>
+<span id="W2L15" class="LineNr"> 15 </span><span class="DiffText">mech. práce, výpočet,.druhy energie, vztah mezi energií a prací. Zákon zachování energie, zákon zachování mechanické energie, výkon, účinnost.</span><span class="DiffChange">                                                       </span>
+<span id="W2L16" class="LineNr"> 16 </span>
+<span id="W2L17" class="LineNr"> 17 </span><span class="markdownOrderedListMarker DiffChange">4.</span><span class="DiffChange"> </span><span class="markdownBold DiffChange">**</span><span class="markdownBold DiffChange">Mechanika tuhého tělesa</span><span class="markdownBold DiffChange">**</span><span class="DiffChange">                                                                                                                                                                                  </span>
+<span id="W2L18" class="LineNr"> 18 </span>
+<span id="W2L19" class="LineNr"> 19 </span><span class="DiffText">dokonale tuhé těleso, pohyb tuhého tělesa, moment síly vzhledem k ose otáčení, skládání a rozklad sil, dvojice sil a moment dvojice sil. Těžiště tělesa, rovnovážná poloha tuhého tělesa. Kinetická energie tuhého tělesa, moment setrvačnosti.</span>
+<span id="W2L20" class="LineNr"> 20 </span>
+<span id="W2L21" class="LineNr"> 21 </span><span class="markdownOrderedListMarker DiffChange">5.</span><span class="DiffChange"> </span><span class="markdownBold DiffChange">**</span><span class="markdownBold DiffChange">Gravitační pole</span><span class="markdownBold DiffChange">**</span><span class="DiffChange">                                                                                                                                                                                          </span>
+<span id="W2L22" class="LineNr"> 22 </span>
+<span id="W2L23" class="LineNr"> 23 </span><span class="DiffChange">Newtonův gravitační zákon, intenzita gravitačního pole, gravitační zrychlení. Pohyby těles v homogenním poli Země (vrhy). Pohyby v centrálním poli Země a grav. poli Slunce.</span><span class="DiffChange">                         </span>
+<span id="W2L24" class="LineNr"> 24 </span>
+<span id="W2L25" class="LineNr"> 25 </span><span class="markdownOrderedListMarker DiffChange">6.</span><span class="DiffChange"> </span><span class="markdownBold DiffChange">**</span><span class="markdownBold DiffChange">Mechanika kapalin a plynů</span><span class="markdownBold DiffChange">**</span><span class="DiffChange">                                                                                                                                                                                </span>
+<span id="W2L26" class="LineNr"> 26 </span>
+<span id="W2L27" class="LineNr"> 27 </span><span class="DiffChange">tekutiny, vlastnosti tekutin, ideální kapalina a ideální plyn. Tlak v kapalinách a plynech vyvolaný vnější a tíhovou silou (Pascalův zákon, hydrostatický tlak). Hydrostatické paradoxon, vztlaková síla v kapalinách a plynech. Hydrodynamika, proudění kapalin a plynů, Bernoulliho rovnice, zák. zachování energie, proudění reálné tekutiny.</span>
+<span id="W2L28" class="LineNr"> 28 </span>
+<span id="W2L29" class="LineNr"> 29 </span><span class="markdownOrderedListMarker DiffChange">7.</span><span class="DiffChange"> </span><span class="markdownBold DiffChange">**</span><span class="markdownBold DiffChange">Základní poznatky molekulárně kinetické teorie látek</span><span class="markdownBold DiffChange">**</span><span class="DiffChange">                                                                                                                                                   </span>
+<span id="W2L30" class="LineNr"> 30 </span>
+<span id="W2L31" class="LineNr"> 31 </span><span class="DiffChange">kinetická teorie látek, základní pojmy částicové struktury. Termodynamická soustava, vnitřní energie, tepelná rovnováha, tlak a teplota z hlediska kinetické teorie látek. První termodynamický zákon.</span>
+<span id="W2L32" class="LineNr"> 32 </span>
+<span id="W2L33" class="LineNr"> 33 </span><span class="markdownOrderedListMarker DiffChange">8.</span><span class="DiffChange"> </span><span class="markdownBold DiffChange">**</span><span class="markdownBold DiffChange">Struktura a vlastnosti plynných látek</span><span class="markdownBold DiffChange">**</span><span class="DiffChange">                                                                                                                                                                    </span>
+<span id="W2L34" class="LineNr"> 34 </span>
+<span id="W2L35" class="LineNr"> 35 </span><span class="DiffChange">model ideálního plynu, stavová rovnice ideálního plynu. Střední kvadratická rychlost, pravděpodobná rychlost. Děje v ideálním plynu, práce plynu, kruhový děj. Druhý termodynamický zákon. Měrná tepelná kapacita</span><span class="DiffText"> plynu. Tepelné motory.</span>
+<span id="W2L36" class="LineNr"> 36 </span>
+<span id="W2L37" class="LineNr"> 37 </span><span class="markdownOrderedListMarker DiffChange">9.</span><span class="DiffChange"> </span><span class="markdownBold DiffChange">**</span><span class="markdownBold DiffChange">Struktura a vlastnosti kapalin</span><span class="markdownBold DiffChange">**</span><span class="DiffChange">                                                                                                                                                                           </span>
+<span class="LineNr">    </span><span class="DiffDelete">----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+<span class="LineNr">    </span><span class="DiffDelete">----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+<span id="W2L38" class="LineNr"> 38 </span>
+<span id="W2L39" class="LineNr"> 39 </span><span class="DiffText">ideální kapalina, povrchová vrstva kapalin, povrchová síla, povrchové napětí a energie. Jevy na rozhraní pevného a kapalného tělesa, kapilární tlak, kapilarita. Teplotní objemová roztažnost kapalin, anomálie vody.</span>
+<span id="W2L40" class="LineNr"> 40 </span>
+<span id="W2L41" class="LineNr"> 41 </span><span class="markdownOrderedListMarker DiffChange">1</span><span class="markdownOrderedListMarker DiffText">0.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Struktura a vlastnosti pevných látek</span><span class="markdownBold DiffText">**</span><span class="DiffChange">                                                                                                                                                                    </span>
+<span id="W2L42" class="LineNr"> 42 </span>
+<span id="W2L43" class="LineNr"> 43 </span><span class="DiffText">krystalické a amorfní látky, ideální krystalová mřížka, poruchy krystalové mřížky. Typy deformací pevného tělesa, Hookův zákon. Délková a objemová roztažnost pevných látek.</span><span class="DiffChange">                </span>
+<span id="W2L44" class="LineNr"> 44 </span>
+<span id="W2L45" class="LineNr"> 45 </span><span class="markdownOrderedListMarker DiffChange">1</span><span class="markdownOrderedListMarker DiffText">1.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Skupenské přeměny</span><span class="markdownBold DiffText">**</span><span class="DiffChange">                                                                                                                                                                                       </span>
+<span id="W2L46" class="LineNr"> 46 </span>
+<span id="W2L47" class="LineNr"> 47 </span><span class="DiffText">tání, tuhnutí, krystalizace, sublimace, vypařování, var, kapalnění, skupenské teplo, měrné skupenské teplo. Sytá pára, fázový diagram.</span><span class="DiffChange">                                                              </span>
+<span id="W2L48" class="LineNr"> 48 </span>
+<span id="W2L49" class="LineNr"> 49 </span><span class="markdownOrderedListMarker DiffChange">1</span><span class="markdownOrderedListMarker DiffText">2.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Elektrické pole</span><span class="markdownBold DiffText">**</span><span class="DiffChange">                                                                                                                                                                                         </span>
+<span id="W2L50" class="LineNr"> 50 </span>
+<span id="W2L51" class="LineNr"> 51 </span><span class="DiffText">Coulombův zákon, intenzita a potenciál el. pole, jejich vztahy. Práce v elektrickém poli, ekvipotenciální plochy, napětí. Elektrostatická indukce, polarizace dielektrika. Kapacita vodiče, kondenzátoru. Spojování kondenzátorů.</span>
+<span id="W2L52" class="LineNr"> 52 </span>
+<span id="W2L53" class="LineNr"> 53 </span><span class="markdownOrderedListMarker DiffChange">1</span><span class="markdownOrderedListMarker DiffText">3.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Obvod stejnosměrného elektrického proudu</span><span class="markdownBold DiffText">**</span><span class="DiffChange">                                                                                                                                                                </span>
+<span id="W2L54" class="LineNr"> 54 </span>
+<span id="W2L55" class="LineNr"> 55 </span><span class="DiffText">vznik stejnosměrného proudu, elektrický odpor. Základní zákony v obvodu stejnosměrného proudu (Ohmův zákon pro část obvodu, pro uzavřený obvod, Kirchhoffovy zákony). Přístroje k měření napětí a proudu. Práce a výkon elektrického obvodu.</span>
+<span id="W2L56" class="LineNr"> 56 </span>
+<span id="W2L57" class="LineNr"> 57 </span><span class="markdownOrderedListMarker DiffChange">1</span><span class="markdownOrderedListMarker DiffText">4.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Elektrický proud v látkách</span><span class="markdownBold DiffText">**</span><span class="DiffChange">                                                                                                                                                                              </span>
+<span id="W2L58" class="LineNr"> 58 </span>
+<span id="W2L59" class="LineNr"> 59 </span><span class="DiffChange">v</span><span class="DiffText">edení el. proudu v kovech, kapalinách a plynech. Závislost el. odporu na teplotě, supravodivost. Termoelektrický jev. Faradayovy zákony, voltampérové charakteristiky, elektrolytická polarizace. Druhy výbojů, katodové záření, elektronový paprsek, princip obrazovky, termoemise.</span>
+<span id="W2L60" class="LineNr"> 60 </span>
+<span id="W2L61" class="LineNr"> 61 </span><span class="markdownOrderedListMarker DiffChange">1</span><span class="markdownOrderedListMarker DiffText">5.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Elektrický proud v polovodičích</span><span class="markdownBold DiffText">**</span><span class="DiffChange">                                                                                                                                                                         </span>
+<span id="W2L62" class="LineNr"> 62 </span>
+<span id="W2L63" class="LineNr"> 63 </span><span class="DiffText">pojem polovodiče, el. odpor v závislosti na teplotě a porovnání s kovy. Vlastní a nevlastní vodivost polovodičů, typ P, N. Termistor, fotorezistor, diodový jev, dioda. Usměrňovač (jednocestný, dvoucestný). Tranzistor, tranzistorový jev.</span>
+<span id="W2L64" class="LineNr"> 64 </span>
+<span id="W2L65" class="LineNr"> 65 </span><span class="markdownOrderedListMarker DiffChange">1</span><span class="markdownOrderedListMarker DiffText">6.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Obvod střídavého proudu</span><span class="markdownBold DiffText">**</span><span class="DiffChange">                                                                                                                                                                                 </span>
+<span id="W2L66" class="LineNr"> 66 </span>
+<span id="W2L67" class="LineNr"> 67 </span><span class="DiffText">vznik střídavého napětí a proudu, porovnání obvodu R, L, C ve střídavém a stejnosměrném obvodu. Výkon střídavého proudu, efektivní hodnoty, fázový posun, účiník. Transformátory, generátory střídavého proudu (třífázový generátor).</span>
+<span id="W2L68" class="LineNr"> 68 </span>
+<span id="W2L69" class="LineNr"> 69 </span><span class="markdownOrderedListMarker DiffChange">1</span><span class="markdownOrderedListMarker DiffText">7.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Stacionární magnetické pole</span><span class="markdownBold DiffText">**</span><span class="DiffChange">                                                                                                                                                                             </span>
+<span id="W2L70" class="LineNr"> 70 </span>
+<span id="W2L71" class="LineNr"> 71 </span><span class="DiffText">magnetické pole el. proudu, mag. indukční čáry, mag. indukce, mag. síla působící na vodič v homog. mag. poli, vzájemné silové působení dvou vodičů s proudem, definice ampéru. Částice s nábojem v mag. poli. Mag. vlastnosti látek.</span>
+<span id="W2L72" class="LineNr"> 72 </span>
+<span id="W2L73" class="LineNr"> 73 </span><span class="markdownOrderedListMarker DiffText">18.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Nestacionární magnetické pole</span><span class="markdownBold DiffText">**</span><span class="DiffChange">                                                                                                                                                                           </span>
+<span id="W2L74" class="LineNr"> 74 </span>
+<span id="W2L75" class="LineNr"> 75 </span><span class="DiffText">souvislost nestacionárního mag. a el. pole, mag. indukční tok, elektromagnetická indukce, Faradayův zákon elmg. indukce, indukovaný proud, vířivé proudy. Vlastní indukce, přechodné jevy.</span><span class="DiffChange">            </span>
+<span id="W2L76" class="LineNr"> 76 </span>
+<span id="W2L77" class="LineNr"> 77 </span><span class="markdownOrderedListMarker DiffText">19.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Kmitavý pohyb</span><span class="markdownBold DiffText">**</span><span class="DiffChange">                                                                                                                                                                                           </span>
+<span id="W2L78" class="LineNr"> 78 </span>
+<span id="W2L79" class="LineNr"> 79 </span><span class="DiffText">vznik kmitání, souvislost harmonického kmitavého pohybu s pohybem po kružnici, kinematika kmitavého pohybu, základní pojmy: Perioda, frekvence, fáze, počáteční fáze. Dynamika kmitavého pohybu, složené kmitání, princip superpozice. Přeměny energie v mechanickém oscilátoru, vlastní a nucené kmitání oscilátoru.</span>
+<span id="W2L80" class="LineNr"> 80 </span>
+<span id="W2L81" class="LineNr"> 81 </span><span class="markdownOrderedListMarker DiffChange">2</span><span class="markdownOrderedListMarker DiffText">0.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Mechanické vlnění</span><span class="markdownBold DiffText">**</span><span class="DiffChange">                                                                                                                                                                                       </span>
+<span id="W2L82" class="LineNr"> 82 </span>
+<span id="W2L83" class="LineNr"> 83 </span><span class="DiffText">vznik a druhy mech. vlnění, rovnice vlnění, interference, šíření vlnění, Huygensův princip, odraz, lom a ohyb vlnění. Akustika, vznik a šíření zvuku, vlastnosti.</span><span class="DiffChange">                                  </span>
+<span id="W2L84" class="LineNr"> 84 </span>
+<span id="W2L85" class="LineNr"> 85 </span><span class="markdownOrderedListMarker DiffChange">2</span><span class="markdownOrderedListMarker DiffText">1.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Elektromagnetické vlnění a záření</span><span class="markdownBold DiffText">**</span><span class="DiffChange">                                                                                                                                                                     </span>
+<span id="W2L86" class="LineNr"> 86 </span>
+<span id="W2L87" class="LineNr"> 87 </span><span class="DiffText">vznik elmg. vlnění a jeho vlastnosti. Elmg. oscilátor, dvouvodičové vedení, rovnice elmg. vlny. Půlvlnný dipól, anténa. Přehled spektra elmg. vlnění, vlastnosti a způsoby šíření podle frekvence (vlnových délek). Jevy potvrzující korpuskulární a vlnový charakter elmg. záření. Sdělovací technika.</span>
+<span id="W2L88" class="LineNr"> 88 </span>
+<span id="W2L89" class="LineNr"> 89 </span><span class="markdownOrderedListMarker DiffChange">2</span><span class="markdownOrderedListMarker DiffText">2.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Optika</span><span class="markdownBold DiffText">**</span><span class="DiffChange">                                                                                                                                                                                                  </span>
+<span id="W2L90" class="LineNr"> 90 </span>
+<span id="W2L91" class="LineNr"> 91 </span><span class="DiffText">pojem světlo, šíření světla, paprsek, principy paprskové a vlnové optiky, index lomu, odraz a lom světla, disperze, interference světla, ohyb, polarizace světla, Optické soustavy a optické zobrazení, zrcadla, čočky, optické přístroje</span>
+<span id="W2L92" class="LineNr"> 92 </span>
+<span id="W2L93" class="LineNr"> 93 </span><span class="markdownOrderedListMarker DiffChange">2</span><span class="markdownOrderedListMarker DiffText">3.</span><span class="DiffText"> </span><span class="markdownBold DiffText">**</span><span class="markdownBold DiffText">Základní poznatky speciální teorie relativity</span><span class="markdownBold DiffText">**</span><span class="DiffChange">                                                                                                                                                           </span>
+<span id="W2L94" class="LineNr"> 94 </span>
+<span id="W2L95" class="LineNr"> 95 </span><span class="DiffText">inerciální a neinerciální vztažné soustavy, prostor a čas v klasické mechanice, základní principy speciální teorie relativity, důsledky Einsteinových principů (relativnost současnosti, kontrakce délek, dilatace času, skládání rychlostí, relativistická hmotnost, hybnost, vztah mezi hmotností a energií).</span>
+<span id="W2L96" class="LineNr"> 96 </span><span class="DiffAdd"> </span><span class="DiffAdd">                                                                                                                                                                                                               </span>
+<span id="W2L97" class="LineNr"> 97 </span><span class="markdownOrderedListMarker DiffAdd">24.</span><span class="DiffAdd"> </span><span class="markdownBold DiffAdd">**</span><span class="markdownBold DiffAdd">Fyzika mikrosvěta</span><span class="markdownBold DiffAdd">**</span><span class="DiffAdd">                                                                                                                                                                                       </span>
+<span id="W2L98" class="LineNr"> 98 </span><span class="DiffAdd"> </span><span class="DiffAdd">                                                                                                                                                                                                               </span>
+<span id="W2L99" class="LineNr"> 99 </span><span class="DiffAdd">zkoumání struktury atomu, Rutherfordův, Millikanův pokus. Korpuskulárně vlnový dualismus, fotoelektrický jev, foton. Popis částice vlnovou funkcí, její význam, kvantově mechanický model atomu vodíku, kvantové přechody, laser. Model jádra, radioaktivita, rozpadový zákon, jaderná elektrárna. Principy detekce částic, urychlovače</span>
+<span id="W2L100" class="LineNr">100 </span><span class="DiffAdd"> </span><span class="DiffAdd">                                                                                                                                                                                                               </span>
+<span id="W2L101" class="LineNr">101 </span><span class="markdownOrderedListMarker DiffAdd">25.</span><span class="DiffAdd"> </span><span class="markdownBold DiffAdd">**</span><span class="markdownBold DiffAdd">Astrofyzika</span><span class="markdownBold DiffAdd">**</span><span class="DiffAdd">                                                                                                                                                                                             </span>
+<span id="W2L102" class="LineNr">102 </span><span class="DiffAdd"> </span><span class="DiffAdd">                                                                                                                                                                                                               </span>
+<span id="W2L103" class="LineNr">103 </span><span class="DiffAdd">Sluneční soustava, Keplerovy zákony, astronomická jednotka, planety, měsíce, komety, pojmy meteor, meteorit, meteoroid. Zatmění Slunce a Měsíce. Základní údaje o hvězdách, vývojová stadia hvězd, galaxie, struktura a vývoj vesmíru.</span>
+</pre>
+</div></td>
+</tr>
+</table>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->
+
